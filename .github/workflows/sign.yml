@@ -23,7 +23,7 @@ jobs:
             session
 
       - name: Deploy to Cloudflare Workers with Wrangler
-        uses: cloudflare/wrangler-action@v3.14.1
+        uses: cloudflare/wrangler-action
         
       - name: Sign
         run: |
