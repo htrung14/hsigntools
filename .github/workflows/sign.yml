@@ -21,12 +21,6 @@ jobs:
           key: session-${{ github.run_id }}
           restore-keys: |
             session
-
-      - name: Deploy to Cloudflare Workers with Wrangler
-        uses: cloudflare/wrangler-action@v3.14.1
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          # The wranglerVersion line is removed entirely
         
       - name: Sign
         run: |
