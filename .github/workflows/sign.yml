@@ -23,10 +23,10 @@ jobs:
             session
 
       - name: Deploy to Cloudflare Workers with Wrangler
-        uses: cloudflare/wrangler-action@v4
+        uses: cloudflare/wrangler-action@latest
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          wranglerVersion: '4'
+          wranglerVersion: 'latest'
         
       - name: Sign
         run: |
